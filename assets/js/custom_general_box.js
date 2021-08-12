@@ -28,3 +28,22 @@ jQuery(document).ready(function($){
 
  });
 
+
+ $(function() {                       //run when the DOM is ready
+  $(".nav-toggle").click(function() { 
+     $('#home_nav').toggleClass("active");   
+     $('#sub-nav').toggleClass("active");   
+         //add the class to the clicked element
+  });
+  $("#home_nav li a").click(function() {  //use a class, since your ID gets mangled
+     $('#home_nav').toggleClass("active");
+      $('#sub-nav').removeClass("active");
+         //add the class to the clicked element
+  });
+  $("#sub-nav li a").click(function() {  //use a class, since your ID gets mangled
+     $('#sub-nav').toggleClass("active");
+         //add the class to the clicked element
+  });
+  
+});
+
