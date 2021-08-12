@@ -2014,3 +2014,53 @@ iframe{ width:100%; height:auto;}
 	position: relative;
 	margin-top: -2rem;
 }
+.processImg img{
+	width: 100%;
+}
+.steps{
+	list-style: none;
+}
+.steps li{
+	display: flex;
+}
+.steps li .imgCard{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.steps li .imgCard img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.processImg .stepCard{
+	position: relative;
+	border: 4px solid rgba(143, 195, 65, 0.247);
+}
+.stepard{
+	position: relative;
+	
+}
+.processImg .overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	padding: 15px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.processImg .overlay h4{
+	color: #fff;
+}
+.processImg .overlay p{
+	color: #fff;
+}
+.processImg .col-md-6{
+	padding: 5px !important;
+	
+}
